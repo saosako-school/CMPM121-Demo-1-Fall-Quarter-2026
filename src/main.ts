@@ -223,6 +223,15 @@ scientistcat.setHoverText(
   "Scientist Cats have dedicated their lives to the pursuit of knowledge...on how to best clone fish. Due to the fact that the subjects of their research often get eaten before any meaningful analysis can be done, they've struggled to get grants. They're willing to share some of their cloned fish if you fund their research efforts.",
 );
 
+const climbingcat: HelperUpgrade = new HelperUpgrade(
+  "Climbing Cat",
+  250,
+  35,
+);
+
+climbingcat.setHoverText(
+  "Climbing Cats are adventurous hunters who climb tall trees to catch fish-loving birds and discover hidden fish supplies. Give them some fish, and they'll bring back even more!",
+);
 const clickUpgrade1: UpgradeForClick = new UpgradeForClick(
   "Sharper Claws",
   500,
@@ -279,6 +288,18 @@ const scienceUpgrade1: UpgradeForUpgrade = new UpgradeForUpgrade(
 );
 scienceUpgrade1.setHoverText(
   "The cats, despite being scientists, are still cats and sleep quite a bit. You think their productivity could increase if you gave them some coffee.",
+);
+
+const catTree: UpgradeForUpgrade = new UpgradeForUpgrade(
+  "Cat Tree",
+  500,
+  upgradeContainer,
+  2,
+  climbingcat,
+  2,
+);
+catTree.setHoverText(
+  "Do you know cat like to climb because in the wild cat climb up and eat their prey above tree",
 );
 
 const clickUpgrade2: UpgradeForClick = new UpgradeForClick(
