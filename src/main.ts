@@ -119,7 +119,7 @@ class HelperUpgrade extends Upgrade {
     this.updateButtonText();
   }
 
-  override buyUpgrade(): void {
+  override buyUpgrade(): void { //increase the number of this upgrade owned, increase the total production rate, and double the cost of the next upgrade
     count -= this.cost;
     total += this.rateAdd;
     this.numOwned++;
